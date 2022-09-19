@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="Survey">
+      <header>
+        <h1>Survey Form</h1>
+        <h6>Thank You For Taking your Time To Give Us Feedback</h6>
+      </header>
+      <form action="/action_page.php">
+        <label for="name" class="text">Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="fname"
+          placeholder="Enter Your name"
+        /><br />
+        <label for="email" class="text">Email:</label><br />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Enter Your Email"
+        />
+        <br />
+        <label for="age" class="text">Age:</label><br />
+        <input type="number" id="age" name="age" placeholder="Enter Your age" />
+        <br />
+        <p>Choose A Role That Best Describes You</p>
+        <select name="cars" id="cars">
+          <option value="Select Your Role">---Select Your Role---</option>
+          <option value="Designer">Designer</option>
+          <option value="Developer">Developer</option>
+          <option value="Manager">Manager</option>
+        </select>
+        <br />
+        <p>Would you recommend our product to a friend?</p>
+        <input type="radio" id="never" name="fav_language" value="never" />
+        <label for="never">Never</label><br />
+        <input type="radio" id="maybe" name="fav_language" value="maybe" />
+        <label for="maybe">Maybe</label><br />
+        <input type="radio" id="likely" name="fav_language" value="likely" />
+        <label for="likely">Likely</label><br />
+        <input
+          type="radio"
+          id="defintely"
+          name="fav_language"
+          value="definitely"
+        />
+        <label for="definitely">Definitely</label>
+        <p>Select the thing you like about our product</p>
+        <input type="checkbox" id="ui" name="ui" value="design" />
+        <label for="ui"> UI</label><br />
+        <input type="checkbox" id="features" name="features" value="features" />
+        <label for="features"> Features</label><br />
+        <input type="checkbox" id="service" name="service" value="service" />
+        <label for="service"> Service</label><br />
+        <input
+          type="checkbox"
+          id="simpleness"
+          name="simpleness"
+          value="simpleness"
+        />
+        <label for="simpleness"> Simpleness</label><br /><br />
+        <p>Remarks</p>
+        <textarea id="improve" name="improve" rows="10" cols="57">
+Tell us how we can improve....
+        </textarea>
+        <br /><br />
+        <input type="submit" value="Submit" />
+        <br />
+      </form>
+    </div>
+  </body>
+</html>
